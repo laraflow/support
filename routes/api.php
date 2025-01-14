@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "API" middleware group. Enjoy building your API!
 |
 */
-if(Config::get(':vendor_slug.skeleton.enabled')) {
+if (Config::get(':vendor_slug.skeleton.enabled')) {
     Route::prefix('skeleton')->name('skeleton.')->group(function () {
-        //DO NOT REMOVE THIS LINE//
+        // DO NOT REMOVE THIS LINE//
     });
 }

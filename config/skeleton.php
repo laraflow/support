@@ -11,7 +11,7 @@ return [
     */
     'enabled' => env('PACKAGE_SKELETON_ENABLED', true),
 
-    //** Model Config Point Do not Remove **//
+    // ** Model Config Point Do not Remove **//
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     */
 
     'repositories' => [
-        //** Repository Binding Config Point Do not Remove **//
+        // ** Repository Binding Config Point Do not Remove **//
     ],
 
 ];

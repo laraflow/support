@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "API" middleware group. Enjoy building your API!
 |
 */
-if(Config::get('skeleton.enabled')) {
+if (Config::get('skeleton.enabled')) {
     Route::prefix('skeleton')->name('skeleton.')->group(function () {
         Route::get('/', function () {
             return \Inertia\Inertia::render('index');
         });
 
-        //DO NOT REMOVE THIS LINE//
+        // DO NOT REMOVE THIS LINE//
     });
 }
