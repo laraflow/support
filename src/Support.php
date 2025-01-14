@@ -1,8 +1,8 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Laraflow\Support;
 
-class Skeleton
+class Support
 {
     // ** Crud Service Method Point Do not Remove **//
 }

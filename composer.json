@@ -1,27 +1,23 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "laraflow/support",
+    "description": "This package will have some support classes and helpers used while working in development",
     "keywords": [
-        ":vendor_name",
+        "laraflow",
         "laravel",
-        ":package_slug"
+        "support"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/laraflow/support",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
-            "role": "Developer"
+            "name": "Mohammad Hafijul Islam",
+            "email": "hafijul233@gmail.com",
+            "role": "Maintainer"
         }
     ],
     "require": {
         "php": "^8.1",
-        "guzzlehttp/guzzle": "^7.0.1",
-        "inertiajs/inertia-laravel": "^0.6.4",
-        "illuminate/contracts": "^10.0",
-        "owen-it/laravel-auditing": "^13.5",
-        "tightenco/ziggy": "^1.0"
+        "illuminate/contracts": "^10.0|^11.0"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -37,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/"
+            "Laraflow\\Support\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Laraflow\\Support\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -62,11 +58,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "Laraflow\\Support\\SupportServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

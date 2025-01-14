@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "API" middleware group. Enjoy building your API!
 |
 */
-if (Config::get(':vendor_slug.skeleton.enabled')) {
-    Route::prefix('skeleton')->name('skeleton.')->group(function () {
+if (Config::get('laraflow.support.enabled')) {
+    Route::prefix('support')->name('support.')->group(function () {
         // DO NOT REMOVE THIS LINE//
     });
 }
