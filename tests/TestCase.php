@@ -3,8 +3,8 @@
 namespace Laraflow\Support\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Laraflow\Support\SupportServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

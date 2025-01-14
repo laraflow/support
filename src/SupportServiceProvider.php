@@ -17,7 +17,7 @@ class SupportServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/support.php', 'laraflow.support'
+            __DIR__.'/../config/support.php', 'laraflow.support'
         );
 
         $this->app->register(RouteServiceProvider::class);
@@ -31,9 +31,9 @@ class SupportServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadTranslationsFrom(__DIR__ . '/../lang', 'support');
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'support');
 
-        $this->loadViewsFrom(__DIR__ . '/../views', 'support');
+        $this->loadViewsFrom(__DIR__.'/../views', 'support');
 
         $this->loadPublishOptions();
 
@@ -45,17 +45,17 @@ class SupportServiceProvider extends ServiceProvider
     {
         // Package Configuration
         $this->publishes([
-            __DIR__ . '/../config/support.php' => config_path('laraflow/support.php'),
+            __DIR__.'/../config/support.php' => config_path('laraflow/support.php'),
         ], 'support-config');
 
         // Package Translation
         $this->publishes([
-            __DIR__ . '/../lang' => $this->app->langPath('vendor/support'),
+            __DIR__.'/../lang' => $this->app->langPath('vendor/support'),
         ], 'support-lang');
 
         // Package Blade Views
         $this->publishes([
-            __DIR__ . '/../views' => resource_path('views/vendor/laraflow/support'),
+            __DIR__.'/../views' => resource_path('views/vendor/laraflow/support'),
         ], 'support-views');
     }
 
